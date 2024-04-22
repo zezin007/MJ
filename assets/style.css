@@ -1,0 +1,55 @@
+body{
+background-color: #da232e;
+}
+button{
+    border-radius: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff9485;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;;
+}
+button:hover{
+    background-color: #ed5c5a;
+}
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+#gatinho-mal{
+    background-image: url('./gifs/gatomal.png');
+    background-size: cover; /* Ajusta a imagem ao tamanho da tela */
+    background-repeat: no-repeat; /* Evita que a imagem seja repetida */
+    background-attachment: fixed;
+}
+#gif {
+    display: block;
+    margin: 20px auto; /* Centraliza horizontalmente */
+}
+
+#opcoes {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+#mensagem {
+    margin-top: 20px;
+    font-size: 18px;
+    color: white;
+}
