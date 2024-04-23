@@ -4,25 +4,27 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/script.js">
     <link rel="stylesheet" href="./assets/style.css" />
     <title>Responde amor</title>
 </head>
 
 <body>
 
-    <h1>Você me ama?</h1>
+    <h1>Oi amor, responde esse quiz aí</h1>
+    <img src="./assets/gifs/minhaDamaDonaDoMeuMundo.jpeg" alt="" width="400px" height="300px">
 
     <div id="opcoes">
-        <button id="btnSim">Sim</button>
-        <button id="btnNao">Não, te odeio</button>
-        <button id="btnSim2">Amo muitao muitaoo, tu é minha vida!</button>
+        <button id="btnRedirecionar">Iniciar Quiz</button>
     </div>
-    
     <div id="mensagem"></div>
-    <img id="gif" src="./assets/gifs/Gatinho1.gif" alt="GIF" style="display: none; width: 200px; height: auto;">
     
-    <script src="./assets/script.js"></script>
+    <script src="./assets/script12.js"></script>
+    <script>
+        // Adiciona um evento de clique ao botão para redirecionar para outra página
+        document.getElementById('btnRedirecionar').addEventListener('click', function() {
+            window.location.href = 'pergunta1.html'; // Substitua 'quiz.html' pelo caminho da sua próxima página
+        });
+    </script>
 </body>
 
 </html>
