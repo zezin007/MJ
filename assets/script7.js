@@ -15,17 +15,17 @@ function verificarResposta(resposta) {
     var gif = document.getElementById('gif');
     
     // Números das opções corretas e erradas para cada pergunta
-    var opcoesCorretas = ['1', '2', '3'];
-    var opcoesErradas = [];
+    var opcoesCorretas = ['1', '2'];
+    var opcoesErradas = ['3'];
     
     if (opcoesCorretas.includes(resposta)) {
-        mensagem.innerText = 'AMOOO';
+        mensagem.innerText = 'Resposta correta!';
         gif.style.display = 'block';
         setTimeout(function() {
-            window.location.href = 'pergunta7.html'; // Redireciona para a próxima página após 3 segundos
+            window.location.href = 'pergunta8.html'; // Redireciona para a próxima página após 3 segundos
         }, 3000); // Delay de 3 segundos
     } else if (opcoesErradas.includes(resposta)) {
-        mensagem.innerText = '';
+        mensagem.innerText = 'CREDO, É O MELHOR DIA DA MINHA SEMANA';
         ocultarOpcaoErrada(resposta);
     }
 }

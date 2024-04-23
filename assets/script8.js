@@ -15,17 +15,17 @@ function verificarResposta(resposta) {
     var gif = document.getElementById('gif');
     
     // Números das opções corretas e erradas para cada pergunta
-    var opcoesCorretas = ['1', '2', '3'];
-    var opcoesErradas = [];
+    var opcoesCorretas = ['3'];
+    var opcoesErradas = ['1', '2'];
     
     if (opcoesCorretas.includes(resposta)) {
-        mensagem.innerText = 'AMOOO';
+        mensagem.innerText = 'Sim, esse é meu sonho!';
         gif.style.display = 'block';
         setTimeout(function() {
-            window.location.href = 'pergunta7.html'; // Redireciona para a próxima página após 3 segundos
+            window.location.href = 'pergunta9.html'; // Redireciona para a próxima página após 3 segundos
         }, 3000); // Delay de 3 segundos
     } else if (opcoesErradas.includes(resposta)) {
-        mensagem.innerText = '';
+        mensagem.innerText = 'Não está errado, porem existe uma prioridade antes, você!';
         ocultarOpcaoErrada(resposta);
     }
 }
